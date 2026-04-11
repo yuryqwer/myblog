@@ -1,0 +1,4 @@
+baseURL = 'https://example.org/'
+locale = 'zh-cn'
+title = '呓语成谶'
+theme = "archie"
