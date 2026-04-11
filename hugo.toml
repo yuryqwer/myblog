@@ -1,4 +1,52 @@
-baseURL = 'http://192.168.5.121:1313/'
-locale = 'zh-cn'
+baseURL = "http://192.168.5.121:1313/"
 title = '呓语成谶'
 theme = "archie"
+copyright = "© yuryqwer"
+languageCode = "zh-Hans"
+
+# Code Highlight
+pygmentsstyle = "monokai"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+disqusShortname = "yourDisqusShortname"
+
+[pagination]
+  pagerSize = 10 # articles per page
+
+[params]
+	mode="auto" # color-mode → light,dark,toggle or auto
+	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
+	subtitle = "你看，我就说吧。"
+	mathjax = true # enable MathJax support
+	katex = true # enable KaTeX support
+	favicon = "/favicon.svg"
+
+# Social Tags
+
+[[params.social]]
+name = "GitHub"
+icon = "github"
+url = "https://github.com/yuryqwer/myblog"
+
+# Main menu Items
+
+[[menu.main]]
+name = "主页"
+url = "/"
+weight = 1
+
+[[menu.main]]
+name = "博客"
+url = "/posts"
+weight = 2
+
+[[menu.main]]
+name = "简介"
+url = "/about"
+weight = 3
+
+[[menu.main]]
+name = "标签"
+url = "/tags"
+weight = 4
