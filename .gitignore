@@ -1,0 +1,18 @@
+# Hugo build output
+public/
+resources/_gen/
+*.log
+
+# Node modules (if using npm/yarn for assets)
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+
+# Hugo environment files
+.hugo_build.lock
