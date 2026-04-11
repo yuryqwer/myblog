@@ -1,4 +1,4 @@
-baseURL = "http://192.168.5.121:1313/"
+baseURL = "http://localhost:1313/"
 title = '呓语成谶'
 theme = "archie"
 copyright = "© yuryqwer"
@@ -17,7 +17,7 @@ disqusShortname = "yourDisqusShortname"
 [params]
 	mode="auto" # color-mode → light,dark,toggle or auto
 	useCDN=false # don't use CDNs for fonts and icons, instead serve them locally.
-	subtitle = "你看，我就说吧。"
+	subtitle = "你看，我就说吧，________。"
 	mathjax = true # enable MathJax support
 	katex = true # enable KaTeX support
 	favicon = "/favicon.svg"
