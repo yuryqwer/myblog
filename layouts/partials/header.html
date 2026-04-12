@@ -1,10 +1,10 @@
-<head lang="{{ .Site.Language.Lang }}">
+<head>
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	{{- $title := ( .Title ) -}}
 	{{- $siteTitle := ( .Site.Title ) -}}
 	{{- if .IsHome -}}
-	<title>{{ $siteTitle }} | Home </title>
+	<title>{{ $siteTitle }} | 主页 </title>
 	{{- else -}}
 	<title>{{ $title }} - {{ $siteTitle }}</title>
 	{{- end -}}
