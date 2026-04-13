@@ -60,3 +60,7 @@ weight = 3
 name = "标签"
 url = "/tags"
 weight = 4
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
