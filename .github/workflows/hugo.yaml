@@ -82,7 +82,7 @@ jobs:
           hugo build \
             --gc \
             --minify \
-            --baseURL "https://yuryqwer.github.io/myblog/" \
+            --baseURL "https://yyccblog.cn/" \
             --cacheDir "${{ runner.temp }}/hugo_cache"
       - name: Cache save
         id: cache-save
