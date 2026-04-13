@@ -2,7 +2,7 @@ baseURL = "http://localhost:1313/"
 title = '呓语成谶'
 theme = "archie"
 copyright = "© yuryqwer"
-languageCode = "zh-Hans"
+locale = "zh-cn"
 
 # Code Highlight
 pygmentsstyle = "monokai"
@@ -28,6 +28,16 @@ disqusShortname = "yourDisqusShortname"
 name = "GitHub"
 icon = "github"
 url = "https://github.com/yuryqwer"
+
+[[params.social]]
+name = "邮箱"
+icon = "mail"
+url = "mailto:yuryqwer@outlook.com"
+
+[[params.social]]
+name = "手机"
+icon = "phone"
+url = "tel:+86-158-9592-6915"
 
 # Main menu Items
 
