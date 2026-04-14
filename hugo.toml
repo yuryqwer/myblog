@@ -23,7 +23,7 @@ disqusShortname = "yourDisqusShortname"
 	subtitle = "你看，我就说吧，________。"
 	mathjax = true # enable MathJax support
 	katex = true # enable KaTeX support
-	favicon = "/favicon.svg"
+	favicon = "/img/favicon.svg"
 
 # Social Tags
 
