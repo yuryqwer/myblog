@@ -11,6 +11,9 @@ pygmentscodefencesguesssyntax = true
 
 disqusShortname = "yourDisqusShortname"
 
+[frontmatter]
+	date = ["date"]
+
 [pagination]
   pagerSize = 10 # articles per page
 

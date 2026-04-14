@@ -1,3 +1,7 @@
+---
+date: "2026-01-13T00:00:00+08:00"
+title: "使用 Kali Linux 破解 Wi-Fi 密码"
+---
 # 使用 Kali Linux 破解 Wi-Fi 密码
 
 ## 准备工作

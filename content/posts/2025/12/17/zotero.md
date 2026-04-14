@@ -1,3 +1,7 @@
+---
+date: "2025-12-17T00:00:00+08:00"
+title: "使用绿联 NAS 的 WebDAV 功能在公网给 iPad/iPhone 上的 Zotero 同步数据"
+---
 # 使用绿联 NAS 的 WebDAV 功能在公网给 iPad/iPhone 上的 Zotero 同步数据
 
 ## 问题
