@@ -2,8 +2,6 @@
 date: "2025-09-04T00:00:00+08:00"
 title: "币安保本赚币 USDC/USDT 循环贷"
 ---
-# 币安保本赚币 USDC/USDT 循环贷
-
 ## 活动
 币安在2025年8月11日出了个活动：[币安USDC奖励计划：申购USDC活期产品，前100,000 USDC可享最高12%年化收益率！](https://www.binance.com/support/announcement/detail/963c2b297f0c4733b0b42342801e2f56?ref=CPA_00LGM5BO35&utm_medium=web_share_copy&utm_source=new_share)
 <img src="/static/img/2025_92739_www.binance.com.jpg" class="narrow-image" alt="币安 USDC 奖励计划">
