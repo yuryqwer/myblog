@@ -18,7 +18,7 @@
 					<h1 class="title"><a href="{{ .RelPermalink }}">{{.Title}}</a></h1>
 					<time>{{ dateFormat "2006年1月2日" .Date }}{{ if .Draft }} <span class="draft-label">草稿</span> {{ end }}</time>
 					<br>{{ template "partials/pagedescription.html" . }}
-					<a class="readmore" href="{{ .RelPermalink }}">继续阅读 ⟶</a>
+					<a class="readmore" href="{{ .RelPermalink }}">阅读全文 ⟶</a>
 				</section>
 				{{ end }}
 				{{ template "partials/paginator.html" . }}

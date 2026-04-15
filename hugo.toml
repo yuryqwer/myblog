@@ -3,6 +3,7 @@ title = '呓语成谶'
 theme = "archie"
 copyright = "© yuryqwer"
 locale = "zh-cn"
+summaryLength = 20
 
 # Code Highlight
 pygmentsstyle = "monokai"
