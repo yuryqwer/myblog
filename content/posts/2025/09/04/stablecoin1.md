@@ -4,7 +4,7 @@ title: "币安保本赚币 USDC/USDT 循环贷"
 ---
 ## 活动
 币安在2025年8月11日出了个活动：[币安USDC奖励计划：申购USDC活期产品，前100,000 USDC可享最高12%年化收益率！](https://www.binance.com/support/announcement/detail/963c2b297f0c4733b0b42342801e2f56?ref=CPA_00LGM5BO35&utm_medium=web_share_copy&utm_source=new_share)
-<img src="/static/img/2025_92739_www.binance.com.jpg" class="narrow-image" alt="币安 USDC 奖励计划">
+{{< img src="/img/2025_92739_www.binance.com.jpg" alt="币安 USDC 奖励计划" class="narrow" >}}
 
 这个活动本质上是 USDC 母公司 Circle 和币安合作，把利润的一部分以 USDC 的形式发放出去，吸引更多用户的。
 
@@ -19,7 +19,7 @@ title: "币安保本赚币 USDC/USDT 循环贷"
 > 质押率 = 借贷资产价值 / 抵押物资产价值
 
 为了质押率的稳定，我们选择抵押一种稳定币（USDC），并借出另一种稳定币（USDT），借出来的 USDT，立即换成 USDC 存入活期理财，然后继续抵押并借出新的 USDT，如此循环往复。
-<img src="/static/img/usdcusdt.png" class="wide-image" alt="循环贷示意图">
+{{< img src="/img/usdcusdt.png" alt="循环贷示意图" class="wide" >}}
 
 1 份 USDC 最终借出的 USDT 是有上限的，这里我们忽略 USDT 换 USDC 的手续费和汇率差，计算公式如下：
 $$0.78+0.78^2+0.78^3+...=\sum_{i=1}^\infty 0.78^i$$

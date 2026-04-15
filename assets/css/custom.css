@@ -1,0 +1,43 @@
+/* Custom image styles */
+
+/* All images and figures centered by default */
+img.narrow,
+img.wide,
+figure.narrow,
+figure.wide {
+  display: block;
+  margin: 1rem auto;
+}
+
+/* Narrow: constrained width on desktop, full-width on mobile */
+img.narrow,
+figure.narrow {
+  max-width: 60%;
+  height: auto;
+}
+
+/* Wide: always full-width on all devices */
+img.wide,
+figure.wide {
+  width: 100%;
+  height: auto;
+}
+
+/* Mobile: all images full-width */
+@media (max-width: 768px) {
+  img.narrow,
+  img.wide,
+  figure.narrow,
+  figure.wide {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+/* Figure caption styling */
+figcaption {
+  font-size: 0.875rem;
+  color: var(--color-text-muted, #666);
+  text-align: center;
+  margin-top: 0.5rem;
+}

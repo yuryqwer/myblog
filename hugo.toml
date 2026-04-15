@@ -15,7 +15,7 @@ disqusShortname = "yourDisqusShortname"
 	date = ["date"]
 
 [pagination]
-  pagerSize = 10 # articles per page
+  pagerSize = 3 # articles per page
 
 [params]
 	mode="auto" # color-mode → light,dark,toggle or auto
@@ -24,6 +24,7 @@ disqusShortname = "yourDisqusShortname"
 	mathjax = true # enable MathJax support
 	katex = true # enable KaTeX support
 	favicon = "/img/favicon.svg"
+	customCSS = ["css/custom.css"]
 
 # Social Tags
 

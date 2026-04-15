@@ -12,18 +12,12 @@ title: "COMFAST 定制版 newifi D2 路由器免拆刷机"
 
 ## 踩坑
 闲鱼卖家并没有提供包装图，收到货后发现跟正常的 newifi D2 不太一样，包装上印着 COMFAST 的标志，型号是 CF-N3。
-<img src="/static/img/IMG_8672.png" class="wide-image" alt="路由器包装">
+{{< img src="/img/IMG_8672.png" alt="路由器包装" class="wide" >}}
 
 我在官网的[产品列表](http://www.comfast.com.cn/index.php?m=content&c=index&a=lists&catid=98)里没找到这款，但是说明书里的图片显示的外观完全不像，反而路由器本体比较像 [CF-N5](http://www.comfast.com.cn/index.php?m=content&c=index&a=show&catid=98&id=16) 这款。当然，后面发现说明书下载错了，下载的 [CF-N3 V3 的说明书](http://www.comfast.com.cn/uploadfile/2021/0630/20210630024130157.rar)，如果是 [CF-N3 的说明书](http://www.comfast.com.cn/uploadfile/2021/0630/20210630024033586.rar)就会发现外观是一致的，这也为后面的犯错埋下了伏笔。
-<figure>
-    <img src="/static/img/CF-N3V3.png" class="narrow-image" alt="CF-N3">
-    <figcaption>错误的CF-N3 V3说明书</figcaption>
-</figure>
+{{< figure src="/img/CF-N3V3.png" alt="CF-N3" caption="错误的CF-N3 V3说明书" class="wide" >}}
 
-<figure>
-    <img src="/static/img/CF-N3.png" class="narrow-image" alt="CF-N3V3">
-    <figcaption>正确的CF-N3说明书</figcaption>
-</figure>
+{{< figure src="/img/CF-N3.png" alt="CF-N3V3" caption="正确的CF-N3说明书" class="wide" >}}
 
 路由器上面倒并没有印着 COMFAST 的字样，外观跟正常的 newifi D2 一模一样。
 
@@ -31,12 +25,12 @@ title: "COMFAST 定制版 newifi D2 路由器免拆刷机"
 
 ### 掉坑里了
 上面说到路由器本体比较像 CF-N5 这款，于是我果断下载了 CF-N5 的固件并通过浏览器成功升级。
-<img src="/static/img/COMFAST_CF-N5.png" class="wide-image" alt="路由器后台">
+{{< img src="/img/COMFAST_CF-N5.png" alt="路由器后台" class="wide" >}}
 
 问题也从这个时候开始爆发，我刷了这个固件之后怎么都没办法上网了，无论是使用 PPPoE 拨号还是挂在主路由下面都不行。
 
 我尝试刷回 CF-N3 固件，结果发现直接提示失败，只有跟当前一模一样的 CF-N5 固件可以刷成功，而这没什么意义。
-<img src="/static/img/firmware_update_failure.png" class="wide-image" alt="固件无法还原">
+{{< img src="/img/firmware_update_failure.png" alt="固件无法还原" class="wide" >}}
 
 这不是正常的 newifi D2 固件，所以也没办法像[网上介绍的方法](https://www.right.com.cn/forum/thread-342918-1-1.html)一样刷 breed。COMFAST 倒是默认开启了 ssh，但是 root 账户的密码既不为空，也不是 root/admin/12345678 这些网上能查到的通用密码。
 
@@ -108,7 +102,7 @@ tar -czf newbackup.file etc/
 ssh -o HostKeyAlgorithms=ssh-rsa root@192.168.0.1
 ```
 密码是`root`，成功登录 ssh。
-<img src="/static/img/COMFAST_ssh.png" class="wide-image" alt="成功登录ssh">
+{{< img src="/img/COMFAST_ssh.png" alt="成功登录ssh" class="wide" >}}
 
 ### 又一个坑 {#upload_file}
 按照[新路由3 (Newifi D2) 免拆机免解锁刷 Breed 教程](https://www.right.com.cn/forum/thread-342918-1-1.html)中的操作，将 newifi-d2-jail-break.ko 文件下载到 /tmp 目录下。
@@ -164,6 +158,6 @@ Writing from /tmp/breed-mt7621-newifi-d2.bin to Bootloader ...
 Rebooting ...
 ```
 等待路由器重启后，先将路由器断电，然后用网线连接电脑到路由器的任一 lan 口，按住 RESET 键后插入电源，等待所有 led 灯开始闪烁后松开 RESET 键，在电脑浏览器上打开 192.168.1.1，看到了熟悉的 breed 界面。
-<img src="/static/img/breed_newifi_d2.png" class="wide-image" alt="breed管理页面">
+{{< img src="/img/breed_newifi_d2.png" alt="breed管理页面" class="wide" >}}
 
 接下来只需要选一个合适的固件刷入即可，网上有很多相关固件和教程，这边不再赘述。

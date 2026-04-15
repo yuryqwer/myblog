@@ -4,7 +4,7 @@ title: "欧易 OKX Boost 刷分指南"
 ---
 ## 广告 & 福利 & 防骗
 这里给自己打个广告，如果觉得本文对你有帮助，欢迎绑定我的邀请码 **YYCCB**，可以获得最高比例的优惠，已经绑定了其他邀请码想要换绑的可以备份好钱包后删除 app 并重新下载（已经有交易量数据的情况）或者新创建一个钱包再绑定，感谢支持！
-<img src="/static/img/IMG_6650.jpg" class="narrow-image" alt="邀请码">
+{{< img src="/img/IMG_6650.jpg" alt="邀请码" class="narrow" >}}
 
 不想绑定别人的邀请码也可以自己先创建一个钱包并备份，在这个钱包中创建邀请码，然后用另一台设备在另一个 ip 下（防止被检测为自我邀请）创建一个钱包并绑定这个自己的邀请码，后面刷分的时候就用第二个钱包刷，也是一样的。
 
@@ -31,7 +31,7 @@ title: "欧易 OKX Boost 刷分指南"
 每天的 Boost 交易量和 Boost 余额数据都是统计过去 10 天的平均数据得到，然后每期活动出来之后按照当天的 Boost 交易量和 Boost 余额数据确定是否满足活动参与条件，也就是说活动是以前面 10 天（不包含当天）的平均数据来确定活动门槛的。因为用的是 UTC 时间，所以对于东八区的用户来说，每天的数据从当天上午八点开始计算，一直到第二天上午七点五十九分结束。当天的数据一般在第二天的上午九点多更新。
 
 ### Boost 交易量计算规则
-<img src="/static/img/IMG_8030.jpg" class="wide-image" alt="交易量计算规则">
+{{< img src="/img/IMG_8030.jpg" alt="交易量计算规则" class="wide" >}}
 <div class="scroll-container">
 
 $$
@@ -62,7 +62,7 @@ $$
 [^5]: 从2025年11月4日开始给Boost榜单里面的代币提供了加成，加成之后的倍数是1.02，也就是说刷这个榜单里面的代币才能达到以前的1倍效果。
 
 对于想刷其他交易对又不太清楚具体倍数是多少的情况，有一种比较简单的方式是查看 DEX 的“专业交易”或者“兑换”中的服务费比例，按优惠前来算，服务费 0% 表示倍数为0，服务费 0.25% 表示 0.25 倍，服务费 0.85% 表示 0.85 倍，“探索” > “OKX Boost”中的代币表示 1.02 倍。
-<img src="/static/img/IMG_8034.PNG" class="wide-image" alt="一种判断积分倍数的简单方法">
+{{< img src="/img/IMG_8034.PNG" alt="一种判断积分倍数的简单方法" class="wide" >}}
 
 对于上面的几种情况，把服务费率除以倍数可以衡量相同Boost交易量下要付出服务费的多少，这个值越小越好。
 <div class="scroll-container">
@@ -122,10 +122,7 @@ BNB 的价格按照 900U 换算成 USDT；LINEA 的价格按照盘前合约 0.03
 
 可以看出交易量并不是刷得越多越好的，因为交易量的增长是指数的，而积分的增长是线性的，交易量对应的指数增长的磨损必然在某个点会超过积分对应的线性增长的收益，这时候继续刷交易量将会亏钱。
 
-<figure>
-  <img src="/static/img/feeandincome.png" class="wide-image" alt="单钱包磨损收益图">
-  <figcaption>单钱包磨损收益图</figcaption>
-</figure>
+{{< figure src="/img/feeandincome.png" alt="单钱包磨损收益图" caption="单钱包磨损收益图" class="wide" >}}
 
 我们用上面表格中的数据大致估算一下利润最大化时的积分$x_0$以及交易量是多少。
 <div class="scroll-container">
@@ -136,10 +133,7 @@ $$2^x=\frac{63.66}{1.64175 \ln 2}$$
 $$x_0=\log_2 \frac{63.66}{1.64175 \ln 2}\approx5.8$$
 </div>
 
-<figure>
-<img src="/static/img/singleprofit.png" class="wide-image" alt="单钱包利润图">
-<figcaption>单钱包利润图</figcaption>
-</figure>
+{{< figure src="/img/singleprofit.png" alt="单钱包利润图" caption="单钱包利润图" class="wide" >}}
 
 第一期活动能让利润最大化的积分是 5.8，对应的交易量是每天 \$895 左右。
 
@@ -148,7 +142,7 @@ $$x_0=\log_2 \frac{63.66}{1.64175 \ln 2}\approx5.8$$
 假如没有进行套保，当币价暴涨时每个人的收益变多，直线斜率变大，此时$x_0$会往右移动。币价涨得越多，$x_0$往右移动越多，直到达到积分上限为止。不过长期来看并没有多少暴涨的币，活动如果要长期做下去就不用考虑币价的影响。
 
 注意，你不需要正好卡在某个档位，OKX Boost 的积分和币安 Alpha 不一样，币安 Alpha 的积分都是整数，而 OKX Boost 的积分是会出现小数点的，也就是你交易量卡在某两个档位中间的话积分也是这两个整数中间的某个小数，交易量只要不是超过最后一档，在两个档位中间的部分是不会浪费的。
-<img src="/static/img/IMG_6584.jpg" class="narrow-image" alt="交易积分可以在两个档位之间">
+{{< img src="/img/IMG_6584.jpg" alt="交易积分可以在两个档位之间" class="narrow" >}}
 
 下面是比较重要的几个公式：
 <div class="scroll-container">
@@ -175,15 +169,12 @@ $$
 我大胆猜测一下这个总积分就是$162022478\div2000\approx81011.24$，考虑到有些人会忘了参加活动，结合最终参与的总积分 76359.77，大约有 94.26% 的人参与了活动，这个比例相对是比较合理的。
 
 如果这个猜测正确，那么欧易计划给每个积分的收益就是 60U 左右（后面如果因为各种原因导致每积分收益降低了，我们的交易量也需要相应减少），代入上面的最后两个公式，算出的最佳积分是 5.72，对应的十五日平均交易量是 \$843.6 左右。
-<figure>
-<img src="/static/img/different_income_per_point.png" class="wide-image" alt="不同每积分收益的利润最大化积分">
-<figcaption>不同每积分收益的利润最大化积分</figcaption>
-</figure>
+{{< figure src="/img/different_income_per_point.png" alt="不同每积分收益的利润最大化积分" caption="不同每积分收益的利润最大化积分" class="wide" >}}
 
 当每积分收益不断减小时，利润最大化积分也在不断减小，直到利润最大化积分处的利润为 0，此时无论怎么刷分都将亏钱。设每积分收益为$a(a>0)$，则
 $$p(x)=ax-(1.64175\times2^x+0.486)$$
 当$x=\log_2 \frac{a}{1.64175 \ln 2}$时，$p_{max}=0$，此时$a\approx3.41412$，$x\approx1.585$。
-<img src="/static/img/IMG_0119.jpg" class="wide-image" alt="方程求解">
+{{< img src="/img/IMG_0119.jpg" alt="方程求解" class="wide" >}}
 单钱包情况下每积分收益不能小于 3.41412U，利润最大化积分也不会小于 1.585，对应的交易量不会小于 \$48。
 
 ### 多钱包情况下的利润最大化
@@ -200,7 +191,7 @@ $$c(t)=1.64175\times2^5 + 0.486\times 2^{5-t}(0<t\leq 5)$$
 $$p(t)=r(t)-c(t)$$
 
 逐利效应会让人不可避免地选择这条曲线上值最大的点作为单钱包刷 5 点积分的替代。
-<img src="/static/img/substitute5.png" class="wide-image" alt="单钱包5积分在多钱包的情况下的各种选择及其利润">
+{{< img src="/img/substitute5.png" alt="单钱包5积分在多钱包的情况下的各种选择及其利润" class="wide" >}}
 <div class="scroll-container">
 
 $$\frac{dp}{dt}=63.66\times2^{5-t}-63.66t\times2^{5-t}\ln 2+0.486\times2^{5-t} \ln 2\overset{令}{=}0$$
@@ -223,10 +214,7 @@ $$p(t)=63.66t\times2^{\alpha-t}-1.64175\times2^\alpha-0.486\times2^{\alpha-t}(0<
 $$p(x)=2^x(\frac{63.66}{2^{\frac{1}{\ln2}+\frac{0.486}{63.66}}\ln 2}-1.64175)\approx2^{x+5}$$
 
 和单钱包的利润图放一起对比一下：
-<figure>
-<img src="/static/img/singleandmultiprofit.jpg" class="wide-image" alt="同交易量单钱包多钱包利润图">
-<figcaption>同交易量单钱包多钱包利润图</figcaption>
-</figure>
+{{< figure src="/img/singleandmultiprofit.jpg" alt="同交易量单钱包多钱包利润图" caption="同交易量单钱包多钱包利润图" class="wide" >}}
 
 交易量越大，利润越多。钱包的”裂变“彻底摆脱了单钱包情况下的积分限制，让利润从原来的类抛物线变成指数增长。最终，拥有更多资源的人（科学家、工作室等等）将赚走绝大部分的钱。
 
@@ -253,10 +241,7 @@ $$p(x)=2^x(\frac{63.66}{2^{\frac{1}{\ln2}+\frac{0.486}{63.66}}\ln 2}-1.64175)\ap
 由于项目方可以随意更改规则，这个活动已经从大致可以计算预期回报变成了赌博。不过我们还是来计算一下这期活动的情况。
 
 暂时忽略 BNB 的价格上涨，交易量和磨损的关系保持不变；BARD 的价格按照场外价格 1U 计算收益。我们暂且认为欧易可以根据历史服务费收入情况预估活动提前两天公布后的趋势，这样结合 BARD 场外价格可以对欧易这次计划的每积分收益进行大致估算。
-<figure>
-<img src="/static/img/IMG_6954.PNG" class="wide-image" alt="红框中是第二期活动公布后两日内服务费增长情况">
-<figcaption>第二期活动公布后两日内服务费增长情况</figcaption>
-</figure>
+{{< figure src="/img/IMG_6954.PNG" alt="红框中是第二期活动公布后两日内服务费增长情况" caption="第二期活动公布后两日内服务费增长情况" class="wide" >}}
 
 最终的总交易积分是 118,938.91，平分 2,600,000 个 BARD，每个积分 21.86 个 BARD。
 
@@ -520,11 +505,11 @@ $$p(x)=2^x(\frac{63.66}{2^{\frac{1}{\ln2}+\frac{0.486}{63.66}}\ln 2}-1.64175)\ap
 2. 点击“创建钱包” > “立即创建”
 3. 备份钱包，苹果用户可以选择云备份，不过最安全的办法是选择手动备份，然后把助记词抄在纸上
 
-<img src="/static/img/IMG_6770.PNG" class="wide-image" alt="创建钱包">
+{{< img src="/img/IMG_6770.PNG" alt="创建钱包" class="wide" >}}
 
 ### 填写邀请码
 点击左上角的九个点图标，更多里面点击邀请计划，点击输入邀请码，用我的邀请码 **YYCCB**，可以获取最高 20% 的服务费减免。
-<img src="/static/img/IMG_6725.PNG" class="wide-image" alt="填写邀请码">
+{{< img src="/img/IMG_6725.PNG" alt="填写邀请码" class="wide" >}}
 
 ### 充值
 交易所里面没有 U 的话需要先通过 C2C 入金，参考[这篇文章](/blog/2025/08/10/funds#c2c)。
@@ -556,10 +541,7 @@ $$p(x)=2^x(\frac{63.66}{2^{\frac{1}{\ln2}+\frac{0.486}{63.66}}\ln 2}-1.64175)\ap
 2. 先点击一下价格下面的输入框，输入法上方会出现 +25%、+50%、+100% 和市价，盯着当前的价格看，等价格变为 0.0025 的时候立即点击市价
 3. 把进度条拉到 100%，点击卖出 AICell，等待屏幕上方提示交易成功
 
-<figure>
-<img src="/static/img/ScreenRecording_09-10-2025.gif" class="narrow-image" alt="买入卖出操作">
-<figcaption>图中的 KOGE 请改成 AICell</figcaption>
-</figure>
+{{< figure src="/img/ScreenRecording_09-10-2025.gif" alt="买入卖出操作" caption="图中的 KOGE 请改成 AICell" class="narrow" >}}
 
 ### 交易量确认
 要查看当天刷了多少交易量，就在钱包首页点击交易历史，筛选出当天的交易数据，把类型是合约交互（限价单显示的是合约交互，如果你用了市价单也算作交易量的，这时候显示的是交易）的 USDT 都加起来，得到的差不多就是当天的交易量（交易量单位是美元，会比 USDT 高一点点）。

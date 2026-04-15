@@ -10,7 +10,7 @@ title: "币安 USDE 脱锚事件"
 ## 脱锚
 币安在2025年9月9日上线 USDE，
 并且在2025年9月22日后给 USDE 提供了 12% 的年化奖励。
-<img src="/static/img/IMG_7629.jpg" class="narrow-image" alt="币安 USDE 奖励">
+{{< img src="/img/IMG_7629.jpg" alt="币安 USDE 奖励" class="narrow" >}}
 之前 USDC 的活动有一万 U 的额度限制，
 这次 USDE 的 12% 年化不限额度，
 并且同样支持循环贷（也就是可以把 USDE 作为抵押物借出另一个币），
