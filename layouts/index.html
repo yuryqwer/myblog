@@ -16,7 +16,7 @@
 				{{ range $paginator.Pages }}
 				<section class="list-item">
 					<h1 class="title"><a href="{{ .RelPermalink }}">{{.Title}}</a></h1>
-					<time>{{ dateFormat ":date_medium" .Date }}{{ if .Draft }} <span class="draft-label">DRAFT</span> {{ end }}</time>
+					<time>{{ dateFormat "2006年1月2日" .Date }}{{ if .Draft }} <span class="draft-label">草稿</span> {{ end }}</time>
 					<br>{{ template "partials/pagedescription.html" . }}
 					<a class="readmore" href="{{ .RelPermalink }}">Read more ⟶</a>
 				</section>
