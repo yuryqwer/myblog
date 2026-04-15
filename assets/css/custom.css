@@ -41,3 +41,24 @@ figcaption {
   text-align: center;
   margin-top: 0.5rem;
 }
+
+/* 修复标题样式：不同级别不同大小，移除 # 前缀 */
+
+/* 恢复正常的标题大小层级 */
+h1 { font-size: 2rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+h5 { font-size: 1.1rem; }
+h6 { font-size: 1rem; }
+
+/* 移除 ::before 添加的 # 前缀 */
+h1::before, h2::before, h3::before, 
+h4::before, h5::before, h6::before {
+  content: none;
+}
+
+/* 博客标题大小 */
+header .main a {
+  font-size: 2.5rem;
+}
