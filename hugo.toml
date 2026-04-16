@@ -51,7 +51,7 @@ url = "/"
 weight = 1
 
 [[menu.main]]
-name = "博客"
+name = "归档"
 url = "/posts"
 weight = 2
 
