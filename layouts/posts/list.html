@@ -1,0 +1,17 @@
+{{ define "main" }}
+<h1 class="page-title">所有博客</h1>
+
+{{ range .Data.Pages.GroupByDate "2006" }}
+  <section>
+    <h2>{{ .Key }}</h2>
+    <ul class="posts">
+      {{ range .Pages }}
+        <li class="post">
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+          <span class="meta">{{ dateFormat "1月2日" .Date }}</span>
+        </li>
+      {{ end }}
+    </ul>
+  </section>
+{{ end }}
+{{ end }}
