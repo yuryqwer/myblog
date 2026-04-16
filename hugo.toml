@@ -4,19 +4,18 @@ theme = "archie"
 copyright = "© yuryqwer"
 locale = "zh-cn"
 summaryLength = 20
+disqusShortname = "yourDisqusShortname"
 
 # Code Highlight
-pygmentsstyle = "monokai"
-pygmentscodefences = true
-pygmentscodefencesguesssyntax = true
-
-disqusShortname = "yourDisqusShortname"
+[markup.highlight]
+	style = "github"
+	lineNos = "inline"
 
 [frontmatter]
 	date = ["date"]
 
 [pagination]
-  pagerSize = 3 # articles per page
+	pagerSize = 3 # articles per page
 
 [params]
 	mode="auto" # color-mode → light,dark,toggle or auto

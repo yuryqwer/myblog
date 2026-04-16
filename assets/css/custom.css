@@ -62,3 +62,41 @@ h4::before, h5::before, h6::before {
 header .main a {
   font-size: 2.5rem;
 }
+
+/* 修复代码选中时的文字颜色 */
+.highlight pre::selection,
+.highlight code::selection,
+.highlight pre *::selection,
+.highlight code *::selection,
+pre::selection,
+pre *::selection,
+code::selection,
+code *::selection {
+  background-color: #333 !important;
+  color: #fff !important;
+}
+
+.highlight pre::-moz-selection,
+.highlight code::-moz-selection,
+.highlight pre *::-moz-selection,
+.highlight code *::-moz-selection,
+pre::-moz-selection,
+pre *::-moz-selection,
+code::-moz-selection,
+code *::-moz-selection {
+  background-color: #333 !important;
+  color: #fff !important;
+}
+
+/* 修复超链接下划线：使用 text-decoration 跟随文字而非 border-bottom */
+a {
+  border-bottom: none !important;
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary, #dc143c);
+  text-underline-offset: 5px;
+}
+
+a:hover,
+a:focus {
+  text-decoration-color: var(--color-primary-hover, #b91c3c);
+}
