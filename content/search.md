@@ -1,9 +1,9 @@
 ---
-title: "Search"
+title: "搜索"
 layout: "search"
 outputs:
   - html
   - json
 ---
 
-Use the search box below to find posts by title, tags, or matching content.
+用下方的搜索框根据标题、标签或者正文内容来搜索博客文章。

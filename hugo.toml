@@ -25,6 +25,7 @@ disqusShortname = "yourDisqusShortname"
 	katex = true # enable KaTeX support
 	favicon = "/img/favicon.svg"
 	customCSS = ["css/custom.css"]
+	mainSections = ["posts"] # sections to include in search index
 
 # Social Tags
 
@@ -64,6 +65,11 @@ weight = 3
 name = "标签"
 url = "/tags"
 weight = 4
+
+[[menu.main]]
+name = "搜索"
+url = "/search"
+weight = 5
 
 [caches]
   [caches.images]
