@@ -68,6 +68,14 @@ h4::before, h5::before, h6::before {
   content: none;
 }
 
+/* Code highlighting */
+.highlight {
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+  border-radius: var(--border-radius, 5px);
+  overflow: visible;
+}
+
 /* 修复代码选中时的文字颜色 */
 .highlight pre::selection,
 .highlight code::selection,
