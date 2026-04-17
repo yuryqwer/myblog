@@ -55,5 +55,8 @@ tag 功能也是通过 front matter 实现的，在每篇文章的 front matter 
 ## 评论
 (TODO)
 
+## 搜索
+(TODO)
+
 ## 部署
 基于我[另一个网站](https://golanguide.cn)的部署经验，我最终还是选择部署在 Cloudflare 上，Hugo 官方提供了非常详细的[教程](https://gohugo.io/host-and-deploy/host-on-cloudflare/)，这里不再赘述，不过要注意其实不用创建 wrangler.toml 和 build.sh 文件，直接使用 cloudflare pages 就行了。另外如果有自己的域名也可以配置一下，让网站的地址更容易记忆。
