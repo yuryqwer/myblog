@@ -43,7 +43,6 @@ figcaption {
   margin-top: 0.5rem;
 }
 
-
 /* 解决标题距离上方过大的问题 */
 h1, h2, h3, h4, h5, h6 {
   margin-block-start: 1em;
@@ -68,7 +67,7 @@ h4::before, h5::before, h6::before {
   content: none;
 }
 
-/* Code highlighting */
+/* 修改overflow使得手机端代码标签可见 */
 .highlight {
   position: relative;
   -webkit-overflow-scrolling: touch;
