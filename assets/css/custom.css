@@ -1,4 +1,8 @@
 /* Custom image styles */
+:root {
+  --color-primary:#F7931A;
+  --color-primary-hover:#F15A24;
+}
 
 /* All images and figures centered by default */
 img.narrow,
