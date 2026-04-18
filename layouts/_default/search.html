@@ -1,9 +1,5 @@
 {{ define "main" }}
-<main>
-  <article class="search-page">
-    <div class="title">
       <h1 class="title">{{ .Title }}</h1>
-    </div>
 
     {{ with .Content }}
     <section class="body search-intro">
@@ -39,7 +35,5 @@
     <noscript>
       <p class="search-status search-status-error">Search requires JavaScript to load the index and filter results.</p>
     </noscript>
-  </article>
-</main>
 <script defer src="{{ absURL "js/search.js" }}"></script>
 {{ end }}
