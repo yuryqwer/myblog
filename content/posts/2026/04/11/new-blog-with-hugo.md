@@ -56,6 +56,21 @@ Tag 功能也是通过 front matter 实现的，在每篇文章的 front matter 
 
 ## 评论
 主题默认使用 Disqus，国内无法访问，我改用了 [giscus](https://github.com/giscus/giscus)，这是一个基于 Github Discussions 实现的评论系统，按照教程一步步操作，然后把生成的`<script>`标签放在`layouts/partials/giscus.html`文件中，然后在`layouts/_default/single.html`最后的位置使用`{{ partial "giscus.html" . }}`引入这个模板文件即可。还可以设置 front matter 的`comments`字段，模板中读取时如果检测到字段是`false`就不开启评论，做到精细化控制每篇文章是否允许评论。
+> 实现计划
+> 1. 准备工作（GitHub端）
+>     - 确保你的GitHub仓库是公开的
+>     - 安装 Giscus App：https://github.com/apps/giscus
+>     - 在仓库设置中启用 Discussions（Settings → General → Features）
+> 2. 生成Giscus配置
+>     - 访问 https://giscus.app/ 配置并获取嵌入代码
+>     - 填入你的仓库、选择Discussion category、mapping选 pathname
+> 3. Hugo修改
+>     - 移除 hugo.toml 中的 disqusShortname
+>     - 创建 layouts/partials/giscus.html，放入giscus脚本
+>     - 修改 layouts/_default/single.html，将第50行的 {{ partial "disqus.html" . }} 改为 {{ partial "giscus.html" . }}
+> 4. 可选增强
+>     - 在 hugo.toml 添加 comments = true 参数控制是否启用评论
+>     - 支持文章级开关：在Front matter中设置 comments: false 可单独禁用
 
 ## 搜索
 搜索功能也是主题自带的，在配置文件中设置`params.mainSections`来确定想要被搜索的范围，然后在配置文件中增加一个`menu.main`字段来把搜索显示出来。当然，样式的修改也可以通过上面提到的 unified file system 来实现。以下内容选自 Archie 的官方 README：
