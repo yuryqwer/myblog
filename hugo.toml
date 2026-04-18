@@ -24,6 +24,7 @@ summaryLength = 20
 	katex = true # enable KaTeX support
 	favicon = "/img/favicon.svg"
 	customCSS = ["css/custom.css"]
+	customJS = ["js/giscus-theme.js"]
 	mainSections = ["posts"] # sections to include in search index
 	comments = true # enable comments via giscus
 
