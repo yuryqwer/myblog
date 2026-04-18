@@ -239,11 +239,6 @@ pre {
   border: 1px solid var(--color-border, #663399);
 }
 
-.highlight pre ::selection {
-  background: rgba(255, 255, 255, 0.2);
-  color: inherit;
-}
-
 pre code {
   background-color: transparent;
   color: inherit;
