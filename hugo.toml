@@ -17,7 +17,7 @@ summaryLength = 20
 	pagerSize = 3 # articles per page
 
 [params]
-	mode="auto" # color-mode → light,dark,toggle or auto
+	mode="toggle" # color-mode → light,dark,toggle or auto
 	useCDN=true # don't use CDNs for fonts and icons, instead serve them locally.
 	subtitle = "你看，我就说吧，________。"
 	mathjax = true # enable MathJax support
