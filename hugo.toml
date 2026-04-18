@@ -4,7 +4,6 @@ theme = "archie"
 copyright = "© yuryqwer"
 locale = "zh-cn"
 summaryLength = 20
-disqusShortname = "yourDisqusShortname"
 
 # Code Highlight
 [markup.highlight]
@@ -26,6 +25,7 @@ disqusShortname = "yourDisqusShortname"
 	favicon = "/img/favicon.svg"
 	customCSS = ["css/custom.css"]
 	mainSections = ["posts"] # sections to include in search index
+	comments = true # enable comments via giscus
 
 # Social Tags
 

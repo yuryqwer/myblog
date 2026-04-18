@@ -55,7 +55,7 @@ Hugo 支持从文件名来提取日期，这要求文件名以 YYYY-MM-DD 开头
 Tag 功能也是通过 front matter 实现的，在每篇文章的 front matter 中设置好标签就行，非常方便。当然，同时还需要在配置文件中开启一下，然后样式之类的也需要自己通过 html 和 css 来调整。
 
 ## 评论
-(TODO)
+主题默认使用 Disqus，国内无法访问，我改用了 [giscus](https://github.com/giscus/giscus)，这是一个基于 Github Discussions 实现的评论系统，按照教程一步步操作，然后把生成的`<script>`标签放在`layouts/partials/giscus.html`文件中，然后在`layouts/_default/single.html`最后的位置使用`{{ partial "giscus.html" . }}`引入这个模板文件即可。还可以设置 front matter 的`comments`字段，模板中读取时如果检测到字段是`false`就不开启评论，做到精细化控制每篇文章是否允许评论。
 
 ## 搜索
 搜索功能也是主题自带的，在配置文件中设置`params.mainSections`来确定想要被搜索的范围，然后在配置文件中增加一个`menu.main`字段来把搜索显示出来。当然，样式的修改也可以通过上面提到的 unified file system 来实现。以下内容选自 Archie 的官方 README：
