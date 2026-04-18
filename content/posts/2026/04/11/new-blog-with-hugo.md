@@ -51,14 +51,14 @@ Hugo 支持从文件名来提取日期，这要求文件名以 YYYY-MM-DD 开头
 ### 主题修改
 我选的主题是 [Archie](https://github.com/athul/archie)，不过有些地方需要调整，比如很多地方我都要改成中文，又或者是默认的样式我不是很喜欢。这些都是通过 [unified file system](https://gohugo.io/quick-reference/glossary/#unified-file-system) 实现的，简单来说就是在项目根目录创建主题的同名文件来将其覆盖掉，html 文件放在 layouts 目录下，css 文件放在 assets/css 目录下。
 
-## tag
-tag 功能也是通过 front matter 实现的，在每篇文章的 front matter 中设置好标签就行，非常方便。当然，同时还需要在配置文件中开启一下，然后样式之类的也需要自己通过 html 和 css 来调整。
+## 标签
+Tag 功能也是通过 front matter 实现的，在每篇文章的 front matter 中设置好标签就行，非常方便。当然，同时还需要在配置文件中开启一下，然后样式之类的也需要自己通过 html 和 css 来调整。
 
 ## 评论
 (TODO)
 
 ## 搜索
-搜索功能也是主题自带的，在配置文件中设置`params.mainSections`来确定想要被搜索的范围，然后在配置文件中增加一个`[[menu.main]]`字段来把搜索显示出来。当然，样式的修改也可以通过上面提到的 unified file system 来实现。以下内容选自 Archie 的官方 README：
+搜索功能也是主题自带的，在配置文件中设置`params.mainSections`来确定想要被搜索的范围，然后在配置文件中增加一个`menu.main`字段来把搜索显示出来。当然，样式的修改也可以通过上面提到的 unified file system 来实现。以下内容选自 Archie 的官方 README：
 > ### Search
 > 
 > Archie ships with an opt-in search page backed by a Hugo-generated JSON index.
