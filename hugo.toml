@@ -3,7 +3,8 @@ title = '呓语成谶'
 theme = "archie"
 copyright = "© yuryqwer"
 locale = "zh-cn"
-summaryLength = 20
+summaryLength = 20 # 主页的文章摘要长度，单位为字符
+enableGitInfo = true # 启用 Git 信息支持，以显示文章的最后修改时间
 
 # Code Highlight
 [markup.highlight]
@@ -14,7 +15,7 @@ summaryLength = 20
 	date = ["date"]
 
 [pagination]
-	pagerSize = 3 # articles per page
+	pagerSize = 3 # 每页显示的文章数量
 
 [params]
 	mode="toggle" # color-mode → light,dark,toggle or auto
