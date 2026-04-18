@@ -30,47 +30,43 @@ disqusShortname = "yourDisqusShortname"
 # Social Tags
 
 [[params.social]]
-name = "GitHub"
-icon = "github"
-url = "https://github.com/yuryqwer"
+	name = "GitHub"
+	icon = "github"
+	url = "https://github.com/yuryqwer"
 
 [[params.social]]
-name = "邮箱"
-icon = "mail"
-url = "mailto:yuryqwer@outlook.com"
+	name = "邮箱"
+	icon = "mail"
+	url = "mailto:yuryqwer@outlook.com"
 
 [[params.social]]
-name = "手机"
-icon = "phone"
-url = "tel:+86-158-9592-6915"
+	name = "手机"
+	icon = "phone"
+	url = "tel:+86-158-9592-6915"
 
 # Main menu Items
 
 [[menu.main]]
-name = "主页"
-url = "/"
-weight = 1
+	name = "主页"
+	url = "/"
+	weight = 1
 
 [[menu.main]]
-name = "归档"
-url = "/posts"
-weight = 2
+	name = "归档"
+	url = "/posts"
+	weight = 2
 
 [[menu.main]]
-name = "简介"
-url = "/about"
-weight = 3
+	name = "简介"
+	url = "/about"
+	weight = 3
 
 [[menu.main]]
-name = "标签"
-url = "/tags"
-weight = 4
+	name = "标签"
+	url = "/tags"
+	weight = 4
 
 [[menu.main]]
-name = "搜索"
-url = "/search"
-weight = 5
-
-[caches]
-  [caches.images]
-    dir = ':cacheDir/images'
+	name = "搜索"
+	url = "/search"
+	weight = 5
