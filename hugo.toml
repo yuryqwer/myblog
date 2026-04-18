@@ -56,10 +56,10 @@ disqusShortname = "yourDisqusShortname"
 	url = "/posts"
 	weight = 2
 
-[[menu.main]]
-	name = "简介"
-	url = "/about"
-	weight = 3
+# [[menu.main]]
+# 	name = "简介"
+# 	url = "/about"
+# 	weight = 3
 
 [[menu.main]]
 	name = "标签"
