@@ -1,6 +1,11 @@
 ---
 date: "2025-12-17T00:00:00+08:00"
 title: "使用绿联 NAS 的 WebDAV 功能在公网给 iPad/iPhone 上的 Zotero 同步数据"
+tags:
+    - NAS
+    - WebDAV
+    - Zotero
+    - 绿联
 ---
 ## 问题
 内网环境下所有设备直接使用 http 来连接 WebDAV 服务即可，iPad/iPhone 上的 Zotero 要想使用 WebDAV 在公网同步数据，必须使用 https 协议，而绿联 NAS 的 5006 端口对应的 https 版本的 WebDAV 功能由于使用了 UGREEN 自签名证书，不被信任，无法连接成功。目前暂时没有找到在 iPad/iPhone 设备上信任自签名证书的方法，只能另想其他办法。
