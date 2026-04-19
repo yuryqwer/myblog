@@ -241,7 +241,7 @@ func MarkdownToHTML(mdContent string) (string, error) {
 
 ## 中间件
 > “You can think of a Go web application as a chain of ServeHTTP() methods being called  one after another.”
-> <div style="text-align: right;">——Alex Edwards</div>
+> ——Alex Edwards
 
 中间件就是插在调用链中用来实现特定功能的函数，一般的模式为：
 ```go
