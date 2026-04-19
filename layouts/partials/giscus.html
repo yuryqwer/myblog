@@ -1,8 +1,8 @@
 <script src="https://giscus.app/client.js"
         data-repo="yuryqwer/myblog"
-        data-repo-id="MDEwOlJlcG9zaXRvcnkyOTc4ODQ3MDY="
+        data-repo-id='{{ getenv "GISCUS_REPO_ID" }}'
         data-category="Announcements"
-        data-category-id="DIC_kwDOEcFcIs4C7Hm-"
+        data-category-id='{{ getenv "GISCUS_CATEGORY_ID" }}'
         data-mapping="pathname"
         data-strict="0"
         data-reactions-enabled="1"
