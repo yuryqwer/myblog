@@ -4,7 +4,6 @@ function setCodeTheme(mode) {
     } else {
         document.documentElement.removeAttribute('data-theme');
     }
-    localStorage.setItem('theme-storage', mode);
 }
 
 document.addEventListener('DOMContentLoaded', function () {
