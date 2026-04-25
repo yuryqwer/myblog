@@ -72,13 +72,12 @@ $ mkdir -p cmd/web internal blog ui/html ui/static
 
 ## 路由设计
 核心的两个页面是博客的列表页和详情页，分别对应如下的路由：
-<div class="scroll-container">
 
 | Route pattern | Handler | Action |
 | ----------- | ----------- | ----------- |
 | GET / | blogList | Display a page containing all the blogs' titles |
 | GET /blog/{blogname} | blogContent | Display the content of the given blog |
-</div>
+
 
 对于 /blog/{blogname} 这样的动态路由，可以在 handler 中使用 r.PathValue("blogname")来获取路由参数的值。
 
@@ -117,12 +116,10 @@ $ mkdir -p cmd/web internal blog ui/html ui/static
 
 ## 静态文件服务
 为了让网站的界面看起来更漂亮，需要添加一些图片、CSS 文件以及 JavaScript 文件并用 http.FileServer 来提供静态文件服务。我们新增一条路由：
-<div class="scroll-container">
 
 | Route pattern | Handler | Action |
 | ----------- | ----------- | ----------- |
 | GET /static/ | http.FileServer | Serve a specific static file |
-</div>
 
 并且用下面的代码定义一个 handler，用来提供静态文件服务：
 ```go
