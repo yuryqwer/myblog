@@ -76,3 +76,31 @@ h4::before, h5::before, h6::before {
   overflow: visible;
 }
 
+/* -------- Table Customization -------- */
+/* 表格横向滚动 */
+.content table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* -------- Math Customization -------- */
+/* KaTeX 公式容器 */
+.katex {
+    display: inline-block;
+}
+
+/* 过宽公式允许滚动 - 匹配 display 模式的公式 */
+.katex-display {
+    display: block;
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    margin: 1em 0;
+}
+
+/* inline 模式的公式如果过宽也处理 */
+.katex-display > .katex {
+    display: inline-block;
+    text-align: left;
+}
