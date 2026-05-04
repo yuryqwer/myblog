@@ -1,7 +1,7 @@
 ---
 date: '2026-05-02T19:54:25+08:00'
 draft: false
-title: '程序员如何配置一台 Macbook Neo'
+title: '程序员如何配置 Macbook Neo'
 ---
 最近 Macbook Neo 很火，没想到居然有一天能用三千多块钱拿下全新的 Macbook，虽然阉割了很多东西，但是日常用完全足够了，这篇文章记录一下我对新电脑的配置。
 
@@ -17,9 +17,9 @@ Macbook Neo 的触控板虽然跟 Pro 和 Air 的 Force Touch 触控板相比还
 ## 终端
 终端是程序员必不可少的工具，通过一些配置，可以让它变得更好用，提高效率。
 ### Command Line Tools
-> Command Line Tools 是Mac用户（尤其是程序员）可以安装的一套工具，它提供了许多常用的Unix工具包，实用程序和编译器。这个工具包包括了如svn、git、make、GCC、clang、perl等在Linux中默认安装的命令。从MacOS High Sierra、Sierra、OS X El Capitan、Yosemite、Mavericks开始，用户可以不必安装整个Xcode软件包，也不需要登录开发人员账户，就可以单独安装Command Line Tools。
+> Command Line Tools 是 Mac 用户（尤其是程序员）可以安装的一套工具，它提供了许多常用的 Unix 工具包，实用程序和编译器。这个工具包包括了如 svn、git、make、GCC、clang、perl 等在 Linux 中默认安装的命令。从 MacOS High Sierra、Sierra、OS X El Capitan、Yosemite、Mavericks 开始，用户可以不必安装整个 Xcode 软件包，也不需要登录开发人员账户，就可以单独安装 Command Line Tools。
 #### 安装步骤
-1. 打开Terminal或iTerm终端。
+1. 打开 Terminal 或 iTerm 终端。
 2. 输入命令`xcode-select --install`。
 3. 在弹出的窗口中点击“安装”。
 4. 同意服务条款。
@@ -28,14 +28,14 @@ Macbook Neo 的触控板虽然跟 Pro 和 Air 的 Force Touch 触控板相比还
 安装完成后，可以通过运行 gcc -v 或 git version 来验证是否安装成功。
 
 #### 安装位置
-Command Line Tools被安装在Mac的根目录 /Library/Developer/CommandLineTools/ 下。这个位置包含了61个可用的新命令，都位于 /Library/Developer/CommandLineTools/usr/bin/ 中。
+Command Line Tools 被安装在 Mac 的根目录`/Library/Developer/CommandLineTools/`下。这个位置包含了 61 个可用的新命令，都位于`/Library/Developer/CommandLineTools/usr/bin/`中。
 
 #### 卸载方法
-如果需要卸载Command Line Tools，可以使用以下命令：
+如果需要卸载 Command Line Tools，可以使用以下命令：
 ```shell
 sudo rm -rf /Library/Developer/CommandLineTools/
 ```
-这将删除系统现有的CommandLineTools目录及其内容。
+这将删除系统现有的 CommandLineTools 目录及其内容。
 
 ### Homebrew
 [Homebrew](https://brew.sh/zh-cn/) 是 macOS 上最受欢迎的包管理工具，它让你能够便捷地安装、更新和管理各种软件包。
@@ -61,3 +61,16 @@ git -C "$(brew --repo homebrew/core)" remote set-url origin https://mirrors.ustc
 # 替换 homebrew-cask.git
 git -C "$(brew --repo homebrew/cask)" remote set-url origin https://mirrors.ustc.edu.cn/homebrew-cask.git
 ```
+
+### Oh My Zsh
+默认的 zsh 不太美观，可以使用 [Oh My Zsh](https://ohmyz.sh/) 对终端进行美化。Oh My Zsh 是基于 zsh 命令行的一个扩展工具集，提供了丰富的扩展功能。
+
+#### 安装
+下列方式任选其一都可：
+| 方法 | 命令 |
+| ----- | ----- |
+| curl | `sh -c "$(curl -fsSL https://install.ohmyz.sh/)"` |
+| wget | `sh -c "$(wget -O- https://install.ohmyz.sh/)"` |
+| fetch | `sh -c "$(fetch -o - https://install.ohmyz.sh/)"` |
+| 国内curl镜像 | `sh -c "$(curl -fsSL https://gitee.com/pocmon/ohmyzsh/raw/master/tools/install.sh)"` |
+| 国内wget镜像 | `sh -c "$(wget -O- https://gitee.com/pocmon/ohmyzsh/raw/master/tools/install.sh)"` |
