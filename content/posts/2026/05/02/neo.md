@@ -62,6 +62,22 @@ git -C "$(brew --repo homebrew/core)" remote set-url origin https://mirrors.ustc
 git -C "$(brew --repo homebrew/cask)" remote set-url origin https://mirrors.ustc.edu.cn/homebrew-cask.git
 ```
 
+#### Homebrew Tap
+Homebrew Tap 是 Homebrew 的扩展，让用户能添加第三方软件仓库。通过 Tap，能安装和管理 Homebrew 里没有的软件包。每个 Tap 就像独立仓库，提供更多额外的软件包供用户选择。
+
+```shell
+brew tap <user>/<repo> # 不加 URL 默认克隆 github 存储库
+```
+`tap`命令不加 URL 地址会默认克隆 github 仓库，国内的话可以配置镜像地址加速下载，比如使用 Homebrew 安装 opencode 可以通过如下命令：
+```shell
+brew tap anomalyco/tap https://github.chenc.dev/https://github.com/anomalyco/homebrew-tap.git
+
+cd $(brew --prefix)/Library/Taps/anomalyco/homebrew-tap
+vim opencode.rb # 编辑对应的`.rb`文件，把所有的 url 地址改成国内镜像地址
+
+brew install anomalyco/tap/opencode
+```
+
 ### Oh My Zsh
 默认的 zsh 不太美观，可以使用 [Oh My Zsh](https://ohmyz.sh/) 对终端进行美化。Oh My Zsh 是基于 zsh 命令行的一个扩展工具集，提供了丰富的扩展功能。
 
