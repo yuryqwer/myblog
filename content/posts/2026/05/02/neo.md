@@ -2,9 +2,13 @@
 date: '2026-05-02T19:54:25+08:00'
 draft: false
 toc: true
-title: '程序员如何配置 Macbook Neo'
+title: '我买了一台 Macbook Neo'
+tags:
+    - Macbook Neo
+    - 配置macbook
 ---
 最近 Macbook Neo 很火，没想到居然有一天能用三千多块钱拿下全新的 Macbook，虽然阉割了很多东西，但是日常用完全足够了，这篇文章记录一下我对新电脑的配置。
+{{< img src="/img/IMG_9E0A80C35439-1.jpeg" alt="订单信息" class="narrow" >}}
 
 ## 触摸板
 Macbook Neo 的触控板虽然跟 Pro 和 Air 的 Force Touch 触控板相比还是有些差距，但是和绝大多数 Windows 笔记本的触控板相比依然领先很多。有一些选项可以设置一下，让这个触控板更好用。
