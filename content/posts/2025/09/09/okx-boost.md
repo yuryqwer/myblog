@@ -1,5 +1,6 @@
 ---
 date: "2025-09-09T00:00:00+08:00"
+toc: true
 title: "欧易 OKX Boost 刷分指南"
 tags:
     - 币圈

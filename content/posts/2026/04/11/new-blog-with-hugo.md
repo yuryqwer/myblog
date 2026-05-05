@@ -1,6 +1,7 @@
 ---
 date: "2026-04-11T11:44:25+08:00"
 draft: false
+toc: true
 title: "用 Hugo 重构个人博客网站"
 tags:
     - Hugo

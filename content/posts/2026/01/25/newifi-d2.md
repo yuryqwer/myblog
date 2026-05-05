@@ -1,5 +1,6 @@
 ---
 date: "2026-01-25T00:00:00+08:00"
+toc: true
 title: "COMFAST 定制版 newifi D2 路由器免拆刷机"
 tags:
     - 路由器

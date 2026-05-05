@@ -1,5 +1,6 @@
 ---
 date: "2025-03-08T00:00:00+08:00"
+toc: true
 title: "Go 语言开发个人博客网站"
 tags:
     - Golang

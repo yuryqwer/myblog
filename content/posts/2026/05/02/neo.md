@@ -1,6 +1,7 @@
 ---
 date: '2026-05-02T19:54:25+08:00'
 draft: false
+toc: true
 title: '程序员如何配置 Macbook Neo'
 ---
 最近 Macbook Neo 很火，没想到居然有一天能用三千多块钱拿下全新的 Macbook，虽然阉割了很多东西，但是日常用完全足够了，这篇文章记录一下我对新电脑的配置。

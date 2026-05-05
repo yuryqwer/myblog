@@ -348,7 +348,7 @@ h6::before { color: var(--color-primary, #dc143c); content: '###### '; }
 }
 
 .toc {
-  background-color: var(--color-background-toc, #ececec);
+  /* background-color: var(--color-background-toc, #ececec); */
   border-radius: var(--border-radius, 5px);
   color: var(--color-text, #232333);
   /* Fallback for older browsers */
