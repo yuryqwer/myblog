@@ -369,6 +369,8 @@ h6::before { color: var(--color-primary, #dc143c); content: '###### '; }
     top: 1.25rem;
     /* Modern logical properties */
     inset-block-start: 1.25rem;
+    /* Set max height */
+    max-height: calc(100vh - 2.5rem);
   }
 }
 
