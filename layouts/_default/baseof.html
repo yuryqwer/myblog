@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "header.html" . -}}
+    <body>
+        <div class="page-layout">
+            <aside class="sidebar-left" id="sidebar-left" aria-label="Side notes"></aside>
+            <div class="content">
+            {{- partial "head.html" . -}}
+            {{- block "main" . }}{{- end }}
+            {{- partial "footer.html" . -}}
+            </div>
+            <aside class="sidebar-right" id="sidebar-right" aria-label="Table of contents"></aside>
+        </div>
+    </body>
+</html>
