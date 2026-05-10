@@ -439,9 +439,9 @@ time {
 /* Posts */
 article .title {
   /* Fallback for older browsers */
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
   /* Modern logical properties */
-  margin-block-end: 1em;
+  margin-block-end: 0.5em;
 }
 
 

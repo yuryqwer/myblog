@@ -6,7 +6,21 @@
       <div class="post-content">
         <div class="title">
           <h1 class="title">{{ .Title }}</h1>
-          <div class="meta">发布于 {{ dateFormat "2006年1月2日" .Date }} · {{ .WordCount }} 字 · 预计阅读 {{ .ReadingTime }} 分钟{{ if .Draft }} <span class="draft-label">草稿</span> {{ end }}</div>
+          <div class="post-tags">
+            {{ if ne .Type "page" }}
+            {{ if gt .Params.tags 0 }}
+            <nav class="nav tags">
+              <ul class="tags">
+                {{ range .Params.tags }}
+                <li><a href="{{ " /tags/" | relLangURL }}{{ . | urlize }}/">{{ . }}</a></li>
+                {{ end }}
+              </ul>
+            </nav>
+            {{ end }}
+            {{ end }}
+          </div>
+          <div class="meta">发布于 {{ dateFormat "2006年1月2日" .Date }} · {{ .WordCount }} 字 · 预计阅读 {{ .ReadingTime }} 分钟{{
+            if .Draft }} <span class="draft-label">草稿</span> {{ end }}</div>
         </div>
         {{ if isset .Params "tldr" }}
         <div class="tldr">
@@ -16,19 +30,6 @@
         <section class="body">
           {{ .Content }}
         </section>
-        <div class="post-tags">
-          {{ if ne .Type "page" }}
-          {{ if gt .Params.tags 0 }}
-          <nav class="nav tags">
-            <ul class="tags">
-              {{ range .Params.tags }}
-              <li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}/">{{ . }}</a></li>
-              {{ end }}
-            </ul>
-          </nav>
-          {{ end }}
-          {{ end }}
-        </div>
       </div>
 
       <!-- TOC -->
