@@ -19,8 +19,15 @@
             {{ end }}
             {{ end }}
           </div>
-          <div class="meta">发布于 {{ dateFormat "2006年1月2日" .Date }} · {{ .WordCount }} 字 · 预计阅读 {{ .ReadingTime }} 分钟{{
-            if .Draft }} <span class="draft-label">草稿</span> {{ end }}</div>
+          <div class="meta">发布于 {{ dateFormat "2006年1月2日" .Date }}
+            {{ $plainText := replaceRE "<[^>]*>" "" .Content }}
+            {{ $chineseChars := len (findRE "[\u4e00-\u9fff]" $plainText) }}
+            {{ $chinesePunct := len (findRE "[，。！？；：\"\"''（）【】、·—…]" $plainText) }}
+            {{ $englishWords := len (findRE "[a-zA-Z]+" $plainText) }}
+            {{ $englishPunct := len (findRE "[.,!?;:\"'()-]" $plainText) }}
+            {{ $totalCount := add $chineseChars $chinesePunct $englishWords $englishPunct }}
+            · {{ $totalCount }} 字 · 预计阅读 {{ math.Ceil (div (float $totalCount) 400) }} 分钟
+            {{ if .Draft }} <span class="draft-label">草稿</span> {{ end }}</div>
         </div>
         {{ if isset .Params "tldr" }}
         <div class="tldr">
