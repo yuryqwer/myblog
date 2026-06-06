@@ -25,7 +25,7 @@ enableGitInfo = true # 启用 Git 信息支持，以显示文章的最后修改�
 	katex = true # enable KaTeX support
 	favicon = "/img/favicon.svg"
 	customCSS = ["css/custom.css", "css/code.css"]
-	customJS = ["js/giscus-theme.js", "js/code.js", "js/sidenotes.js", "https://cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js", "js/image-zoom.js"]
+	customJS = ["js/giscus-theme.js", "js/code.js", "js/sidenotes.js", "js/scrollspy.js", "https://cdn.jsdelivr.net/npm/medium-zoom@1/dist/medium-zoom.min.js", "js/image-zoom.js"]
 	mainSections = ["posts"] # sections to include in search index
 	comments = true # enable comments via giscus
 

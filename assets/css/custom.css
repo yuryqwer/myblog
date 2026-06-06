@@ -113,3 +113,8 @@ h4::before, h5::before, h6::before {
     display: inline-block;
     text-align: left;
 }
+
+.toc a.active,
+.toc li.active > a {
+  font-weight: bold;
+}
