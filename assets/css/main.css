@@ -366,8 +366,6 @@ h6::before { color: var(--color-primary, #dc143c); content: '###### '; }
 .toc li.active > a {
   background-color: var(--color-primary, #F7931A);
   color: #ffffff;
-  padding: 2px 6px;
-  border-radius: 3px;
 }
 
 @media screen and (min-width: 60em) {
