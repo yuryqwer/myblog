@@ -114,6 +114,17 @@ h4::before, h5::before, h6::before {
     text-align: left;
 }
 
+a.lightgallery {
+  display: block;
+  touch-action: manipulation;
+}
+
+a.lightgallery:hover,
+a.lightgallery:focus {
+  background-color: transparent;
+  outline: none;
+}
+
 .toc a.active,
 .toc li.active > a {
   font-weight: bold;
