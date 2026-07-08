@@ -967,6 +967,8 @@ kbd {
   }
 
   .sidenote-inline {
+    opacity: 0;
+    transition: opacity 0.2s ease;
     position: absolute;
     font-size: 0.82em;
     line-height: 1.45;
@@ -977,6 +979,10 @@ kbd {
   .sidenote-inline p {
     display: inline;
     margin: 0;
+  }
+
+  .sidenote-inline.positioned {
+    opacity: 1;
   }
 
   .sidenote-num {

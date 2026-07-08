@@ -61,6 +61,7 @@
       notes[i].style.top = (refRect.top - sidebarRect.top) + 'px';
       notes[i].style.left = gap + 'px';
       notes[i].style.width = Math.max(noteWidth, 100) + 'px';
+      notes[i].classList.add('positioned');
     }
   }
 
