@@ -20,7 +20,7 @@ enableGitInfo = true # 启用 Git 信息支持，以显示文章的最后修改�
 [params]
 	mode="toggle" # color-mode → light,dark,toggle or auto
 	useCDN=true # don't use CDNs for fonts and icons, instead serve them locally.
-	subtitle = "你看，我就说吧，________。"
+	subtitle = "你看，我就说吧。"
 	mathjax = false # disable MathJax support
 	katex = true # enable KaTeX support
 	favicon = "/img/favicon.svg"
