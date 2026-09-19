@@ -1,6 +1,5 @@
 ---
 date: '2026-09-19T10:45:15+08:00'
-draft: true
 toc: true
 title: '使用 VS Code 同时管理多个 Golang 项目'
 tags:
