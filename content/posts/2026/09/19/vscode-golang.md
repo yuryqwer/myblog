@@ -78,4 +78,5 @@ tags:
 ```
 并且重启语言服务器`Go: Restart Language Server`，再次打开三个项目后的进程情况如下
 {{< img src="/img/IMG_0784.PNG" alt="进程占用情况after" class="wide" >}}
-一个内存占用最大的守护进程，三个`gopls -remote=auto`进程，以及四个`gopls ** telemetry **`遥测进程，总体内存占用从 3G 降低到了 1.4G。
+一个内存占用最大的守护进程，三个`gopls -remote=auto`进程，以及四个`gopls ** telemetry **`遥测进程[^1]，总体内存占用从 3G 降低到了 1.4G。
+[^1]: 还可以运行`go telemetry off`并重启语言服务器来关闭遥测进程（除了守护进程的那个）来进一步节省内存空间。
